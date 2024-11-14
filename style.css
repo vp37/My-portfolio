@@ -745,10 +745,7 @@ i{
     }
     @media screen and (max-width:600px)
     {
-        body{
-            overflow-x: hidden;
-
-        }
+       
         .nav_menu_button{
             display: none;
         }
