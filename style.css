@@ -294,7 +294,7 @@ i{
         margin-top: 30%;
         border-radius: 40% 40% 40% 40%;
         overflow: hidden;
-        animation: imgfloat 5s ease-in-out infinite;
+        animation: imgfloat 5s ease-in-out ;
         margin-left: 20px;
     }
     .seco_img>img{
@@ -303,10 +303,11 @@ i{
         border-radius: 40% 40% 40% 40%;
         object-fit: cover;
         margin-left: -20px;
+        /* background-color: rgba(128, 128, 128, 0.182) ; */
     }
     @keyframes imgfloat {
         50%{
-            transform: translate(50px);
+            opacity:0;
         }
     }
                                                         /* abouit me */
@@ -384,7 +385,7 @@ i{
         overflow: hidden;
     }
     .profile:hover{
-        background-image: linear-gradient(to right,lightskyblue,rgb(40, 64, 106));
+        background-image: linear-gradient(to right,rgb(20, 136, 208),rgb(40, 64, 106));
     }
     .skillbox1{
         display: flex;
