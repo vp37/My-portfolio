@@ -809,8 +809,8 @@ i{
         }
         .seco_img,
         .seco_img img{
-            width: 150px;
-            height: 150px;
+            width: 300px;
+            height: 300px;
         }
         .row{
             display: flex;
