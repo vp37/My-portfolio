@@ -32,6 +32,10 @@ document.addEventListener("DOMContentLoaded", () => {
         link.click();
         document.body.removeChild(link);
     });
+
+    function Hireme(){
+        alert('If you interset to Hire me you contact me this number 6379622168')
+    }
     
 
 
