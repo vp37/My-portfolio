@@ -746,6 +746,9 @@ i{
     }
     @media screen and (max-width:600px)
     {
+        .container{
+            overflow: hidden;
+        }
        
         .nav_menu_button{
             display: none;
@@ -761,17 +764,34 @@ i{
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            background-color:rgba(128, 128, 128, 0.075) ;
+            background-color:rgba(188, 35, 35, 0.075) ;
             backdrop-filter: blur(5px);
             width: 300px;
             border-radius: 0px 30px 0px 30px;
-            min-height: 450px;
+            min-height: 400px;
             height: 100vh;
             transition: 0.3s;
         }
         .navlist{
+            display: flex;
+            justify-content: center;
+            align-items: center;
             flex-direction: column;
-    
+            position: absolute;
+            list-style: none;
+            margin-top: 80px;
+            background-color: transparent;
+            backdrop-filter: blur(50px);
+            right: 25px;
+            padding-left: 10px;
+            /* text-align: center; */
+        }
+        .navlist>li>a{
+            color: black;
+            background-color: antiquewhite;
+        }
+        .navlist>li>a:hover{
+            color: rgb(96, 19, 229);
         }
         .nav_menu_button i{
             margin-left: -0px;
