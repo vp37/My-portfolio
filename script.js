@@ -1,11 +1,14 @@
-function myMenuFunction(){
-    var menubth=document.getElementById("myNavMenu");
-    if(menubth.className==="navmenu")
-    {
-        menubth.className+="responsive";
+function myMenuFunction() {
+    var menubth = document.getElementById("myNavMenu");
+    if (menubth.classList.contains("navmenu")) {
+        menubth.classList.add("responsive");
+        menubth.classList.remove("navmenu");
+    } else {
+        menubth.classList.add("navmenu");
+        menubth.classList.remove("responsive");
     }
-    menubth.className="menubar";
 }
+
 
 
 let body=document.getElementById("toggle_switch").addEventListener("click", () => {
