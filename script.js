@@ -35,7 +35,7 @@ skillButtons.forEach(button => {
 
 document.addEventListener("DOMContentLoaded", () => {
     var typingEffect = new Typed(".typedtext", {
-        strings: ["Full Stack Developer....", "Coder...." ],
+        strings: [" Developer....", "Coder....","Designer....." ],
         loop: true,
         typeSpeed: 150,
         backSpeed: 80,
