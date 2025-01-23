@@ -10,15 +10,32 @@ function myMenuFunction() {
 }
 
 
+const toggleSwitch = document.getElementById("toggle_switch");
+const moonIcon = document.getElementById("moon");
+const sunIcon = document.getElementById("sun");
 
-let body=document.getElementById("toggle_switch").addEventListener("click", () => {
+toggleSwitch.addEventListener("click", () => {
     document.body.classList.toggle("dark");
+    const isDarkMode = document.body.classList.contains("dark");
+    moonIcon.style.display = isDarkMode ? "none" : "none";
+    sunIcon.style.display = isDarkMode ? "block" : "none";
+});
+
+
+const skillButtons = document.querySelectorAll(".skills");
+const explanationBox = document.getElementById("explanation");
+
+skillButtons.forEach(button => {
+    button.addEventListener("click", () => {
+        const skillInfo = button.getAttribute("data-info");
+        explanationBox.innerHTML = `<p>${skillInfo}</p>`;
+    });
 });
 
 
 document.addEventListener("DOMContentLoaded", () => {
     var typingEffect = new Typed(".typedtext", {
-        strings: ["Designer", "Coder", "Developer"],
+        strings: ["Full Stack Developer....", "Coder...." ],
         loop: true,
         typeSpeed: 150,
         backSpeed: 80,
@@ -39,6 +56,8 @@ document.addEventListener("DOMContentLoaded", () => {
     function Hireme(){
         alert('If you interset to Hire me you contact me this number 6379622168')
     }
+
+    
     
 
 
